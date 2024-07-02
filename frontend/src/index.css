@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white flex justify-center items-center h-screen m-0;
+}
+
+.app {
+  @apply text-center;
+}
+
+.question-section {
+  @apply mb-4;
+}
+
+.answer-section button {
+  @apply m-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none;
+}
