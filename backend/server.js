@@ -8,8 +8,16 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+    origin:"https://mcq-game-app-frontend.vercel.app",
+  }));
+
 app.use(express.json());
+
+app.get('/', (req, res)=>{
+    res.json('Hello')
+  })
 
 app.use('/api/questions', questionRoutes);
 
